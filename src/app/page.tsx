@@ -1,95 +1,78 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import Header from '@/components/Header';
+import ImgCarousel from '@/components/Carousel';
+import Colors from '@/components/Colors';
+import Footer from '@/components/Footer';
+import OpenLayersMap from '@/components/Map';
+import FacebookPagePlugin from '@/components/FacebookPagePlugin';
+import Script from 'next/script';
+import ShowLocationButton from '@/components/LocationButton';
 
 export default function Home() {
+  const nonce = Math.random().toString(36).substring(7);
+
+ 
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    
+    <div className="bg-color">
+      <Script
+        strategy="lazyOnload"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v12.0"
+        nonce= {nonce}
+      />
+      
+      <Header />
+      <main>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className='mt-4 border border-1 border-dark shadow'><ImgCarousel /></div>
+            </div>
+          </div>
+          <div className="row row-cols-1 row-cols-md-2 g-4 mt-4">
+            <div className="col mb-4">
+              <div className="card shadow" style={{ backgroundColor: Colors.color4 }}>
+                <h1 className="card-title text-center cardTitleStyle text-decoration-underline">Colores Serranos</h1>
+                <p className="card-content p-2 text-center cardpstyle">Colores Serranos es el lugar de descanso y recreación ideal para quienes deciden hacer un paréntesis en su vida cotidiana. Los invita a disfrutar de sus cabañas de estilo minimalistas diseñadas como suites para 2 personas -adultas- y construidas con total independencia una de la otra en 2 hectáreas de parque.</p>
+              </div>
+            </div>
+            <div className="col mb-4">
+              <div className="card shadow" style={{ backgroundColor: Colors.color4 }}>
+                <h1 className="card-title text-center cardTitleStyle text-decoration-underline">Ubicación</h1>
+                <p className="card-content p-2 text-center cardpstyle">Ubicado a solo 7 Km de La Falda y a 75 km de Córdoba capital, con vista panorámica a las Sierras Chicas, cerca del río San Francisco, Colores Serranos nace para ofrecerles una cálida estadía en las sierras cordobesas.</p>
+              </div>
+            </div>
+            <div className="col mb-4 ">
+              <div className="card shadow" style={{ backgroundColor: Colors.color4 }}>
+                <h1 className="card-title text-center cardTitleStyle text-decoration-underline">El complejo cuenta con:</h1>
+                <ul className="list-unstyled cardpstyle text-center ">
+                  <li>Piscina con solarium</li>
+                  <li>Quincho con asadores</li>
+                  <li>Casa de Té</li>
+                  <li>Wi-Fi</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col mb-4 ">
+              <div className="card" style={{ backgroundColor: Colors.color4 }}>
+                <h1 className="card-title text-center cardTitleStyle">Mapa</h1>
+                <div className="card bg-secondary text-white shadow"><OpenLayersMap></OpenLayersMap></div>
+                <ShowLocationButton></ShowLocationButton>
+              </div>
+             
+            </div>
+            <div className="col mb-4 d-flex align-content-center justify-content-center">
+              
+                <FacebookPagePlugin></FacebookPagePlugin>
+               
+              
+             </div>
+            
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </div>
   );
 }
