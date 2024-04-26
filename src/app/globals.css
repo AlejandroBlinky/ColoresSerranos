@@ -19,14 +19,14 @@
 
 .bg-color{
     background:
-linear-gradient(135deg, rgba(96, 156, 147) 21px, rgba(240, 236, 201) 22px, rgba(240, 236, 201) 24px, transparent 24px, transparent 67px, rgba(240, 236, 201) 67px, rgba(240, 236, 201) 69px, transparent 69px),
-linear-gradient(225deg, rgba(96, 156, 147) 21px, rgba(240, 236, 201) 22px, rgba(240, 236, 201) 24px, transparent 24px, transparent 67px, rgba(240, 236, 201) 67px, rgba(240, 236, 201) 69px, transparent 69px)0 64px;
-background-color:rgba(96, 156, 147);
+linear-gradient(135deg, rgba(51, 51, 51) 21px,rgb(80, 80, 80) 22px,rgb(80, 80, 80) 24px, transparent 24px, transparent 67px,rgb(80, 80, 80) 67px,rgb(80, 80, 80) 69px, transparent 69px),
+linear-gradient(225deg, rgba(51, 51, 51) 21px,rgb(80, 80, 80) 22px,rgb(80, 80, 80) 24px, transparent 24px, transparent 67px,rgb(80, 80, 80) 67px,rgb(80, 80, 80) 69px, transparent 69px)0 64px;
+background-color:rgba(51, 51, 51);
 background-size: 64px 128px;
 }
 
 .btn-outline-warning {
-  color: rgba(240, 236, 201) !important;
+  color:rgb(80, 80, 80) !important;
 }
 
 .titlelogostyle{
@@ -38,6 +38,7 @@ font-weight: 800;
 .imglogostyle{
     max-height: 14vh;
     min-height: 14vh;
+    padding: 2vh;
 }
 .navbarStyle {
   display:flex;
@@ -48,7 +49,7 @@ font-weight: 800;
 .cardTitleStyle {
   font-size: 2em;
   font-style: italic;
-  color: rgba(51, 51, 51);
+  
   
 }
 
@@ -56,7 +57,7 @@ font-weight: 800;
   font-size: 1.3em;
   font-weight: lighter;
   
-  color:rgba(51, 51, 51);
+  
 }
 
 .navbarStyle img {
@@ -66,7 +67,7 @@ font-weight: 800;
 .navbarListItems {
     
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .listItems:hover {
@@ -103,7 +104,7 @@ font-weight: 800;
 
 @media screen and (min-width: 768px) and (max-width: 1270px){
     .btn-outline-warning {
-        color: rgba(240, 236, 201) !important;
+        color:rgb(80, 80, 80) !important;
       }
       
       .titlelogostyle{
@@ -141,13 +142,13 @@ font-weight: 800;
       
       .cardTitleStyle {
         font-size: 2em;
-        color: rgba(51, 51, 51);
+       
         
       }
       
       .cardpstyle {
         font-size: 1.2em;
-        color:rgba(51, 51, 51);
+        
       }
       
       .navbarStyle img {
@@ -170,7 +171,7 @@ font-weight: 800;
 /* Moviles */
 @media screen and (max-width: 768px) {
     .btn-outline-warning {
-        color: rgba(240, 236, 201) !important;
+        color:rgb(80, 80, 80) !important;
       }
       
       .titlelogostyle{
@@ -200,9 +201,9 @@ font-weight: 800;
       }
       .navbarListItems {
         text-decoration: none;
-        font-size: 2em;
-        border:1px solid rgba(240, 236, 201);
-        border-radius: 10px;
+        font-size: 1.5em;
+        border:1px solidrgb(80, 80, 80);
+        border-radius:10px;
         padding: 3vh;
         
      }

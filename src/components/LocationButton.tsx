@@ -10,7 +10,7 @@ const ShowLocationButton = () => {
 
   return (
     <button
-      className='btn btn-outline-dark bg-info-subtle shadow text-dark fs-4'
+      className='btn btn-outline-dark bg-dark shadow text-white fs-4'
       onClick={handleShowLocationClick}
     >
       Mostrar ubicación

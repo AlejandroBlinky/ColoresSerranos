@@ -8,7 +8,7 @@ import mailgif from '../app/img/mailgif.gif'
 const Footer = () => {
   return (
     <div className='footerStyle shadow' style={{backgroundColor:Colors.color6}}>
-        <div className='container-fluid'>
+        <div className='container-fluid '>
 
             <div className='footercontainerstyle'>
              |<div className='footerdivs'><a><img className='footerlogos shadow ' src={whatsapplogo.src} alt='whats'></img></a>

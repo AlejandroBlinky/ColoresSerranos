@@ -5,6 +5,7 @@ const Colors = {
     color4: 'rgba(240, 236, 201)',
     color5: 'rgba(106, 103, 43)',
     color6: 'rgba(51, 51, 51)',
+    color7: 'rgba(51, 51, 51,0.85)',
 };
 
 
