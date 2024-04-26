@@ -11,16 +11,16 @@ const Footer = () => {
         <div className='container-fluid '>
 
             <div className='footercontainerstyle'>
-             |<div className='footerdivs'><a><img className='footerlogos shadow ' src={whatsapplogo.src} alt='whats'></img></a>
+             |<div className='footerdivs'><a href='https://api.whatsapp.com/send/?phone=543541661399&text=Hola%21+Quisiera+obtener+informaci%C3%B3n+de+las+caba%C3%B1as&type=phone_number&app_absent=0'><img className='footerlogos shadow ' src={whatsapplogo.src} alt='whats'></img></a>
              <p className='text-white fs-4 '>Chateá con nosotros.</p></div>
 
-             |<div className='footerdivs'><a><img className='footerlogos shadow  ' src={instlogo.src} alt='insta'></img></a>
+             |<div className='footerdivs'><a  href='https://www.instagram.com/coloreserranos'><img className='footerlogos shadow  ' src={instlogo.src} alt='insta'></img></a>
              <p className='text-white fs-4 '>Instagram</p></div>
 
-             <div className='footerdivs'><a><img className='footerlogos shadow ' src={facebooklogo.src} alt='facebook'></img></a>
+             <div className='footerdivs'><a href='https://www.facebook.com/coloreserranos'><img className='footerlogos shadow ' src={facebooklogo.src} alt='facebook'></img></a>
              <p className='text-white fs-4 '>Facebook</p></div>
 
-            <div className='footerdivs'><a><img className='footerlogos shadow ' src={mailgif.src} alt='email'></img></a>
+            <div className='footerdivs'><a href='mailto:coloreserranos@gmail.com'><img className='footerlogos shadow ' src={mailgif.src} alt='email'></img></a>
             <p className='text-white  fs-4'>coloreserranos@gmail.com</p></div>
             </div>
         </div>
