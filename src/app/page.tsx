@@ -33,20 +33,20 @@ export default function Home() {
           </div>
           <div className="row row-cols-1 row-cols-md-2 g-4 mt-4">
             <div className="col mb-4">
-              <div className="card shadow" style={{ backgroundColor: Colors.color7, color:Colors.color3 }}>
-                <h1 className="card-title text-center cardTitleStyle text-decoration-underline">Colores Serranos</h1>
+              <div className="card shadow" style={{ backgroundColor: Colors.color7,color:'white'}}>
+                <h1 className="card-title text-center cardTitleStyle ">Colores Serranos</h1>
                 <p className="card-content p-2 text-center cardpstyle">Colores Serranos es el lugar de descanso y recreación ideal para quienes deciden hacer un paréntesis en su vida cotidiana. Los invita a disfrutar de sus cabañas de estilo minimalistas diseñadas como suites para 2 personas -adultas- y construidas con total independencia una de la otra en 2 hectáreas de parque.</p>
               </div>
             </div>
             <div className="col mb-4 ">
-              <div className="card shadow" style={{backgroundColor: Colors.color7, color:Colors.color3 }}>
-                <h1 className="card-title text-center cardTitleStyle text-decoration-underline">Ubicación</h1>
+              <div className="card shadow" style={{backgroundColor: Colors.color7, color:'white'}}>
+                <h1 className="card-title text-center cardTitleStyle ">Ubicación</h1>
                 <p className="card-content p-2 text-center cardpstyle">Ubicado a solo 7 Km de La Falda y a 75 km de Córdoba capital, con vista panorámica a las Sierras Chicas, cerca del río San Francisco, Colores Serranos nace para ofrecerles una cálida estadía en las sierras cordobesas.</p>
               </div>
             </div>
             <div className="col mb-4 ">
-              <div className="card shadow" style={{ backgroundColor: Colors.color7, color:Colors.color3 }}>
-                <h1 className="card-title text-center cardTitleStyle text-decoration-underline">El complejo cuenta con:</h1>
+              <div className="card shadow" style={{ backgroundColor: Colors.color7, color:'white' }}>
+                <h1 className="card-title text-center cardTitleStyle ">El complejo cuenta con:</h1>
                 <ul className="list-unstyled cardpstyle text-center ">
                   <li>Piscina con solarium</li>
                   <li>Quincho con asadores</li>
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col mb-4 ">
-              <div className="card" style={{ backgroundColor: Colors.color7, color:Colors.color3}}>
+              <div className="card" style={{ backgroundColor: Colors.color7, color:'white'}}>
                 <h1 className="card-title text-center cardTitleStyle">Mapa</h1>
                 <div className="card bg-secondary text-white shadow"><OpenLayersMap></OpenLayersMap></div>
                 <ShowLocationButton></ShowLocationButton>

@@ -7,7 +7,7 @@ import logo from '../app/img/logo.png';
 
 const Header = () => {
   return (
-    <header className='navbarStyle shadow bg-color' >
+    <header className='navbarStyle shadow' style={{backgroundColor:Colors.color6}}>
       <Link className='p-0 text-decoration-none titlelogostyle d-flex align-items-center' style={{color:Colors.color3}} href='/'><img className='imglogostyle' src={logo.src} alt='Logo'></img>Colores Serranos</Link>
       <ul className='navbarContainerStyle'>
         <li className='listItems'><Link className='navbarListItems' style={{color:Colors.color3}} href='/complejo'>Complejo</Link></li>
