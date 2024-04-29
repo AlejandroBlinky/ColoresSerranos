@@ -22,23 +22,26 @@ const ImgCarousel = () => {
   ];
 
   return (
-   
-     <div className='shadow shadow-lg'><Carousel
-     showArrows={true}
-     showThumbs={false}
-     infiniteLoop={true}
-     autoPlay={true}
-     interval={3000}
-     transitionTime={500}
-     emulateTouch={true}
-     className=''>
-     {images.map((image, index) => (
-       <div className='bg-dark' key={index}>
-         <img className='carouselImgStyle' src={image.src} alt={`Image ${index + 1}`} />
-       </div>
-     ))}
-   </Carousel></div>
-   
+    <div className='bg-dark'>
+      
+      <Carousel
+        showArrows={true}
+        showThumbs={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={3000}
+        transitionTime={500}
+        emulateTouch={true}
+      
+      >
+        {images.map((image, index) => (
+          <div className='' key={index}>
+            <img className='carouselImgStyle' src={image.src} alt={`Image ${index + 1}`} />
+          </div>
+        ))}
+      </Carousel>
+      
+    </div>
   );
 };
 

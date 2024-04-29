@@ -6,15 +6,24 @@
   margin: 0;
   box-sizing: border-box;
 }
-.footerlogos{
-    max-width: 10%;
-    min-width: 10vh;
 
+.fb-page{
+ 
+  min-width: 50vh;
+  max-width: 50vh;
+ 
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+.socialmedialogos:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s;
 
-.footerlogos:hover{
-    transform: scale(1.1);
-    transition: transform 0.2s;
 }
 
 .bg-color{
@@ -89,18 +98,28 @@ font-weight: 800;
   height: auto;
 }
 
-.footerStyle {
-  padding: 1%;
-  margin-top: 5%;
+@media screen and (min-width: 1270px){
+  .SocialMediaContainer {
+    position: fixed;
+    top: 50%; /* Ajusta la posición vertical según tus necesidades */
+    transform: translateY(-50%); /* Centra verticalmente el contenedor */
+    right: 2%; /* Ajusta la posición horizontal desde el borde derecho */
+    display: flex;
+    flex-direction: row;
+  }
   
-}
+  .socialMediaDiv {
+  margin-top:10px !important;
+    
+  
+  }
+  
+  .socialmedialogos {
+    width: 8vh; /* Ajusta el ancho de los íconos según tus necesidades */
+    height: auto; 
+    margin-top: 4vh;/* Permitirá que la altura se ajuste automáticamente manteniendo la proporción */
+  }
 
-.footercontainerstyle{
-   display: flex;
-   flex-direction: row;
-   justify-items: center;
-   justify-content: space-around;
-   align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1270px){
@@ -108,6 +127,27 @@ font-weight: 800;
         color:rgb(80, 80, 80) !important;
       }
       
+      .SocialMediaContainer {
+        position: fixed;
+        top: 50%; /* Ajusta la posición vertical según tus necesidades */
+        transform: translateY(-50%); /* Centra verticalmente el contenedor */
+        right: 2%; /* Ajusta la posición horizontal desde el borde derecho */
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .socialMediaDiv {
+      margin-top:10px !important;
+        
+      
+      }
+      
+      .socialmedialogos {
+        width: 8vh; /* Ajusta el ancho de los íconos según tus necesidades */
+        height: auto; 
+        margin-top: 4vh;/* Permitirá que la altura se ajuste automáticamente manteniendo la proporción */
+      }
+
       .titlelogostyle{
       font-size: 2em;
       
@@ -163,10 +203,7 @@ font-weight: 800;
         height: auto;
       }
       
-      .footerStyle {
-        padding: 1%;
-        margin-top: 5%;
-      }
+     
 }
 
 /* Moviles */
@@ -175,6 +212,27 @@ font-weight: 800;
         color:rgb(80, 80, 80) !important;
       }
       
+      .SocialMediaContainer {
+      display: flex;
+     
+      justify-content: center;
+      
+      
+      }
+      
+      
+      
+      .socialmedialogos {
+        width: 20vh; 
+        height: auto; 
+       
+      }
+
+      .socialmedialogos:hover{
+        transform: scale(1.1);
+        transition: transform 0.2s;
+      }
+
       .titlelogostyle{
       font-size: 2em;
       justify-content: center;
@@ -239,34 +297,5 @@ font-weight: 800;
       }
       
       
-      .footerStyle {
-        padding: 1%;
-        margin-top: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .footerdivs{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        
-      }
-
-
-
-      .footerdivs a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .footercontainerstyle{
-        display: flex;
-        flex-direction: column;
-        
-        gap: 2vh;
-      }
+    
 }

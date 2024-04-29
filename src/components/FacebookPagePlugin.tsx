@@ -4,12 +4,13 @@ const FacebookPagePlugin = () => {
   return (
     <div
       className="fb-page min-vw-50"
+      
       data-href="https://www.facebook.com/coloreserranos/?ref=embed_page"
       data-tabs="timeline"
       data-width=""
       data-height=""
       data-small-header="false"
-      data-adapt-container-width="false"
+      data-adapt-container-width="true"
       data-hide-cover="false"
       data-show-facepile="true"
     >

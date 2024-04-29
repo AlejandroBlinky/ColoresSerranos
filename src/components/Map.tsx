@@ -27,8 +27,8 @@ const OpenLayersMap = () => {
           }),
         ],
         view: new View({
-          center: fromLonLat([-64.1888, -31.4201]),
-          zoom: 8,
+          center: fromLonLat([-64.47958778650543, -31.145143238334636]),
+          zoom: 16,
         }),
       });
 
@@ -73,7 +73,7 @@ const OpenLayersMap = () => {
     return link;
   };
 
-  return <div ref={mapContainer} className="p-0 m-0" style={{ width: '100%', height: '30vh' }}></div>;
+  return <div ref={mapContainer} className="p-0 m-0" style={{ width: '100%', height: '50vh' }}></div>;
 };
 
 export default OpenLayersMap;
