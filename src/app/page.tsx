@@ -36,10 +36,10 @@ export default function Home() {
                 <p className="card-content p-2 text-center cardpstyle">Colores Serranos es el lugar de descanso y recreación ideal para quienes deciden hacer un paréntesis en su vida cotidiana. Los invita a disfrutar de sus cabañas de estilo minimalistas diseñadas como suites para 2 personas -adultas- y construidas con total independencia una de la otra en 2 hectáreas de parque.</p>
                 <h1 className="card-title text-center cardTitleStyle mt-5">El complejo cuenta con:</h1>
                 <ul className="list-unstyled cardpstyle text-center ">
-                  <li>Piscina con solarium</li>
-                  <li>Quincho con asadores</li>
-                  <li>Casa de Té</li>
-                  <li>Wi-Fi</li>
+                  <li>- Piscina con solarium</li>
+                  <li>- Quincho con asadores</li>
+                  <li>- Casa de Té</li>
+                  <li>- Wi-Fi</li>
                 </ul>
                  
               <div className="d-flex align-content-center justify-content-center">
